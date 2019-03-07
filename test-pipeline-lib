@@ -12,7 +12,7 @@ node {
     windows('master') {
         echo ''' run bat "cmd /?" '''
     }
-    tools.sayHello('ttttttttt')
+
     def request = libraryResource 'org/foo/request.json'
     echo request
 }
