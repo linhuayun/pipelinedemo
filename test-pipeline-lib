@@ -1,4 +1,5 @@
 @Library('testlib') import org.foo.Zot
+@Library('tools') _
 node {
     def z = new org.foo.Zot()
     z.checkOutFrom('xxxxxxx')
