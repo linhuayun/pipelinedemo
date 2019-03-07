@@ -1,17 +1,17 @@
-@Library('testlib') import org.foo.Zot
-@Library('tools') _
+//@Library('testlib') import org.foo.Zot
+@Library('tools') import org.foo.Zot
 node {
     def z = new org.foo.Zot()
     z.checkOutFrom('xxxxxxx')
 
-    log.info 'Starting'
-    log.warning 'Nothing to do!'
-
-    sayHello 'Joe'
-    sayHello()
-
-    windows('master') {
-        echo ''' run bat "cmd /?" '''
-    }
-    tools.sayHello('ttttttttt')
+//    log.info 'Starting'
+//    log.warning 'Nothing to do!'
+//
+//    sayHello 'Joe'
+//    sayHello()
+//
+//    windows('master') {
+//        echo ''' run bat "cmd /?" '''
+//    }
+//    tools.sayHello('ttttttttt')
 }
