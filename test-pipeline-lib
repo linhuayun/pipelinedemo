@@ -12,4 +12,5 @@ node {
     windows('master') {
         echo ''' run bat "cmd /?" '''
     }
+    tools.sayHello('ttttttttt')
 }
