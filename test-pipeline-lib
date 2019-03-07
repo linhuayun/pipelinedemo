@@ -1,5 +1,7 @@
-@Library('testlib') import org.foo.Zot
+@Library('testlib')
+import org.foo.Zot
 node {
+    stage('test') {
     def z = new org.foo.Zot()
     z.checkOutFrom('xxxxxxx')
 
@@ -15,4 +17,5 @@ node {
 
     def request = libraryResource 'org/foo/request.json'
     echo request
+}
 }
