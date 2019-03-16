@@ -1,7 +1,9 @@
 node {
     try {
-	sh 'cat xxxx'
+        sh 'echo xxxx'
     } finally {
-	currentBuild.rawBuild.@result = hudson.model.Result.SUCCESS
-    }
+	echo "finally"
+	currentBuild.result = 'FAILURE'
+        currentBuild.rawBuild.@result = hudson.model.Result.SUCCESS
+										}
 }
