@@ -1,0 +1,7 @@
+node {
+    try {
+	sh 'cat xxxx'
+    } finally {
+	currentBuild.rawBuild.@result = hudson.model.Result.SUCCESS
+    }
+}
